@@ -1,0 +1,51 @@
+$color: rgb(255, 165, 0);
+$colo1: #f2f2f2;
+
+section {
+  border: 1px solid red;
+  width: 100%;
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  border: none;
+
+  .capa__loki {
+    border: 5px solid $color;
+    margin: 2% 50% 0% 37%;
+    width: 25%;
+    height: 21em;
+    object-fit: cover;
+    filter: brightness(45%);
+  }
+
+  .paragrafo__principal {
+    border: 2px solid $color;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+    font-family: "Display Playair";
+    font-style: normal;
+    font-weight: 500;
+    color: $colo1;
+    background-image: linear-gradient(
+      to right top,
+      #0e1218,
+      #061317,
+      #021413,
+      #05140b,
+      #0f1201
+    );
+  }
+}
+
+@media (max-width: 360px) {
+  section {
+    .capa__loki {
+      border: 5px solid $color;
+      margin: 0% 20% 0% 25%;
+      width: 50%;
+      height: 18em;
+    }
+  }
+}
